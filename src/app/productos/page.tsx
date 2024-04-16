@@ -40,12 +40,12 @@ const Productos = () => {
                 <h2 className={styles.title}>{product.title}</h2>
                 <p className={styles.description}>{product.description}</p>
                 <div className={styles.additionalInfo}>
-                  <p className={styles.price}>Precio: ${product.price}</p>
-                  <p className={styles.discount}>Descuento: {product.discountPercentage}%</p>
-                  <p className={styles.rating}>Rating: {product.rating}</p>
-                  <p className={styles.stock}>Stock: {product.stock}</p>
-                  <p className={styles.brand}>Marca: {product.brand}</p>
-                  <p className={styles.category}>Categoría: {product.category}</p>
+                  <p className={styles.price} ><a className={styles.titulopequeño}>Precio: </a>${product.price}</p>
+                  <p className={styles.discount}><a className={styles.titulopequeño}>Descuento: </a>{product.discountPercentage}%</p>
+                  <p className={styles.rating}><a className={styles.titulopequeño}>Rating:</a> {product.rating}</p>
+                  <p className={styles.stock}><a className={styles.titulopequeño}>Stock:</a> {product.stock}</p>
+                  <p className={styles.brand}><a className={styles.titulopequeño}>Marca:</a> {product.brand}</p>
+                  <p className={styles.category}><a className={styles.titulopequeño}>Categoría:</a> {product.category}</p>
                 </div>
               </div>
             </div>

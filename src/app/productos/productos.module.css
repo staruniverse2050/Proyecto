@@ -1,3 +1,5 @@
+
+  
 .container {
     margin-top: 50px; /* Ajusta el margen superior */
     margin-left: auto;
@@ -9,8 +11,8 @@
 .titleprincipal {
     font-size: 36px;
     position: relative;
-    top: 66px;
-    background-color: rgb(18, 48, 109);
+    top: 75px;
+    background-color: #023061;;
     color: #ffffff;
     padding: 15px 20px; /* Ajusta el espaciado interno */
     border-radius: 8px;
@@ -27,7 +29,7 @@
 .card {
     border: 1px solid #e0e0e0; /* Cambia el color del borde */
     border-radius: 8px;
-    margin-top: 62px;
+    margin-top: 90px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra más suave */
     transition: transform 0.3s, box-shadow 0.3s;
@@ -40,8 +42,12 @@
 }
 
 .image {
-    width: 100%;
+    width: 200px;
     height: 200px;
+    position: relative;
+    left: 40px;
+    top: 14px;
+    border-radius: 50%; /* Configura el radio del borde para que sea la mitad del ancho/alto */
     object-fit: cover;
     border-bottom: 1px solid #e0e0e0; /* Añade una línea de separación en la parte inferior de la imagen */
 }
@@ -66,4 +72,8 @@
 .additionalInfo p {
     margin-bottom: 10px;
     color: #888; /* Cambia el color del texto */
+}
+.titulopequeño{
+    font-weight: bold; /* Añade negrita al texto */
+
 }

@@ -15,7 +15,7 @@ export default function Home() {
   src="https://vakano.studio/wp-content/uploads/2023/08/vs-1.png"
   id="logo"
   alt="Vacano Studio"
-  width={480}
+  width={580}
   height={467}
   priority
 />

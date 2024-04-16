@@ -1,4 +1,3 @@
-
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Head from 'next/head';
@@ -9,6 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Tikitecno",
   description: "Tikitecno",
+  icons:"https://vakano.studio/wp-content/uploads/2023/08/vs-3.png",
 };
 
 export default function RootLayout({
@@ -19,11 +19,9 @@ export default function RootLayout({
   return (
     <>
       <Head>
-        {/* Componente Head para configurar el icono del sitio */}
-        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/512px-LEGO_logo.svg.png" />
+        {metadata.icons && <link rel="shortcut icon" href={metadata.icons} />}
       </Head>
       <html lang="en">
-        {/* Renderiza el componente principal y los props de la página */}
         <body className={inter.className}>{children}</body>
       </html>
     </>

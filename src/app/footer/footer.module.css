@@ -1,0 +1,49 @@
+
+.footer {
+    background-color: #292828;
+    color: #ffffff;
+    padding: 10px;
+    position: relative;
+    top: 96px;
+    width: 170rem;
+    height: 170px;
+    right: 445px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un efecto elevado */
+  }
+  
+  .content {
+    max-width: 1200px;
+    margin: 0 auto;
+    top: 20px;
+    position: relative;
+    left: 470px;
+  }
+  
+  .content p {
+    font-size: 16px;
+    margin-bottom: 10px; /* Añadimos espacio entre los párrafos */
+  }
+  
+  .socialLinks {
+    margin-top: 20px; /* Añadimos espacio entre el contenido y los enlaces sociales */
+  }
+  
+  .socialLinks a {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .facebook:hover{
+    transform: translateY(-3px); /* Mueve el enlace hacia arriba cuando se pasa el cursor sobre él */
+    background: linear-gradient(135deg, #262f8d, #ffffff9d); 
+    border-radius: 4px;
+  }
+  .instagram:hover{
+    transform: translateY(-3px); /* Mueve el enlace hacia arriba cuando se pasa el cursor sobre él */
+    background: linear-gradient(135deg, #4F5BD5, #C13584); 
+    border-radius: 4px;
+  }
+  .twitter:hover{
+    transform: translateY(-3px); /* Mueve el enlace hacia arriba cuando se pasa el cursor sobre él */
+  }

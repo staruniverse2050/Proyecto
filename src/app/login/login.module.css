@@ -1,0 +1,60 @@
+/* login.module.css */
+.container {
+    max-width: 400px;
+    margin-top: 120px;
+    padding: 70px;
+    margin-left: 510px;
+    top: 60px; /* Ajusta esta propiedad según la cantidad que desees bajar el contenedor */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }  
+  
+  .textInput[type="text"],
+  .textInput[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  .button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    position: relative;
+    top: 34px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+  }
+
+#iconlogin {
+    border-radius: 50%; /* Por ejemplo, un borde redondeado */
+    position: relative;
+    left: 45px;
+    border: 2px solid #333; /* Un borde sólido de color gris oscuro */
+  }
+  

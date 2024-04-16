@@ -44,6 +44,7 @@
     background: linear-gradient(135deg, #4F5BD5, #C13584); 
     border-radius: 4px;
   }
-  .twitter:hover{
+  .linkeding:hover{
     transform: translateY(-3px); /* Mueve el enlace hacia arriba cuando se pasa el cursor sobre él */
+    color: #005f91; /* Cambia el color al pasar el mouse sobre el ícono */
   }

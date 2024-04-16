@@ -49,7 +49,7 @@ const datos = () => {
     if (loading) {
       Swal.fire({
         title: 'Cargando...',
-        html: 'Espere un momento mientras se cargan los datos del usuario.',
+        html: 'Espere un momento mientras se cargan tus datos',
         allowOutsideClick: false,
         allowEscapeKey: false,
         allowEnterKey: false,

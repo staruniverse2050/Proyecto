@@ -1,7 +1,9 @@
 "use client"
 import { useState, useEffect } from 'react';
+import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 import Nav from '../nav/page';
 import styles from "./productos.module.css";
+import Swal from 'sweetalert2';
 
 const Productos = () => {
   const [products, setProducts] = useState([]);
@@ -27,6 +29,22 @@ const Productos = () => {
     }
   };
 
+  useEffect(() => {
+    if (loading) {
+      // Muestra la alerta de carga
+      Swal.fire({
+        title: 'Espere un momento, por favor',
+        allowOutsideClick: false,
+        showConfirmButton: false,
+      });
+      Swal.showLoading(); // Muestra el indicador de carga
+    } else {
+      // Cierra la alerta cuando los productos se cargan
+      Swal.close();
+    }
+  }, [loading]);
+  
+
   return (
     <>
       <Nav />
@@ -40,7 +58,7 @@ const Productos = () => {
                 <h2 className={styles.title}>{product.title}</h2>
                 <p className={styles.description}>{product.description}</p>
                 <div className={styles.additionalInfo}>
-                  <p className={styles.price} ><a className={styles.titulopequeño}>Precio: </a>${product.price}</p>
+                  <p className={styles.price}><a className={styles.titulopequeño}>Precio: </a>${product.price}</p>
                   <p className={styles.discount}><a className={styles.titulopequeño}>Descuento: </a>{product.discountPercentage}%</p>
                   <p className={styles.rating}><a className={styles.titulopequeño}>Rating:</a> {product.rating}</p>
                   <p className={styles.stock}><a className={styles.titulopequeño}>Stock:</a> {product.stock}</p>
@@ -52,6 +70,24 @@ const Productos = () => {
           ))}
         </div>
       </div>
+      <footer className={styles.footer}>
+        <div className={styles.content}>
+          <p>@ 2024 Vacano Studio. Todos los derechos reservados.</p>
+          <p>Contacto: info@vacanostudio.com</p>
+          <p>Teléfono: +1234567890</p>
+          <div className={styles.socialLinks}>
+            <a href="https://facebook.com/vacanostudio" target="_blank" rel="noopener noreferrer">
+              <FaFacebookF className={styles.facebook} />
+            </a>
+            <a href="https://twitter.com/vacanostudio" target="_blank" rel="noopener noreferrer">
+              <FaTwitter className={styles.twitter} />
+            </a>
+            <a href="https://instagram.com/vacanostudio" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className={styles.instagram} />
+            </a>
+          </div>
+        </div>
+      </footer>
     </>
   );
 };

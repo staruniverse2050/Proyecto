@@ -26,6 +26,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@types/three": "^0.163.0",
+    "npm-force-resolutions": "^0.0.10",
     "typescript": "^5"
   }
 }

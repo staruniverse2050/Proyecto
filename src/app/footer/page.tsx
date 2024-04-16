@@ -1,4 +1,4 @@
-import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa'; // Íconos de FontAwesome
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import styles from "./footer.module.css";
 
 const Footer = () => {
@@ -9,13 +9,13 @@ const Footer = () => {
         <p>Contacto: info@vacanostudio.com</p>
         <p>Teléfono: +1234567890</p>
         <div className={styles.socialLinks}>
-          <a href="https://facebook.com/vacanostudio" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/vakanostudio" target="_blank" rel="noopener noreferrer">
             <FaFacebookF className={styles.facebook} />
           </a>
-          <a href="https://twitter.com/vacanostudio" target="_blank" rel="noopener noreferrer">
-            <FaTwitter className={styles.twitter} />
+          <a href="https://vakano.studio/index.php/contacto/#" target="_blank" rel="noopener noreferrer">
+            <FaLinkedinIn className={styles.linkeding} />
           </a>
-          <a href="https://instagram.com/vacanostudio" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/vakano_studio/" target="_blank" rel="noopener noreferrer">
             <FaInstagram className={styles.instagram} />
           </a>
         </div>

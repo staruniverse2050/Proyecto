@@ -6,19 +6,25 @@
     margin-right: auto;
     max-width: 1200px;
     padding: 20px;
+    margin-bottom: 80px; /* Agrega un margen inferior para dejar espacio con el footer */
 }
+
 
 .titleprincipal {
     font-size: 36px;
     position: relative;
     top: 75px;
-    background-color: #023061;;
+    background-color: #023061;
     color: #ffffff;
     padding: 15px 20px; /* Ajusta el espaciado interno */
     border-radius: 8px;
     margin-bottom: 30px;
     text-align: center; /* Centra el texto */
+    height: 120px; /* Ajusta la altura del elemento */
+    display: flex; /* Añade flexbox para centrar verticalmente */
+    align-items: center; /* Centra verticalmente el contenido */
 }
+
 
 .productList {
     display: grid;
@@ -77,3 +83,50 @@
     font-weight: bold; /* Añade negrita al texto */
 
 }
+.footer {
+    background-color: #292828;
+    color: #ffffff;
+    padding: 10px;
+    position: relative;
+    width: 170rem;
+    height: 170px;
+    right: 81%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un efecto elevado */
+  }
+  
+  .content {
+    max-width: 1200px;
+    margin: 0 auto;
+    top: 20px;
+    position: relative;
+    left: 470px;
+  }
+  
+  .content p {
+    font-size: 16px;
+    margin-bottom: 10px; /* Añadimos espacio entre los párrafos */
+  }
+  
+  .socialLinks {
+    margin-top: 20px; /* Añadimos espacio entre el contenido y los enlaces sociales */
+  }
+  
+  .socialLinks a {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .facebook:hover{
+    transform: translateY(-3px); /* Mueve el enlace hacia arriba cuando se pasa el cursor sobre él */
+    background: linear-gradient(135deg, #262f8d, #ffffff9d); 
+    border-radius: 4px;
+  }
+  .instagram:hover{
+    transform: translateY(-3px); /* Mueve el enlace hacia arriba cuando se pasa el cursor sobre él */
+    background: linear-gradient(135deg, #4F5BD5, #C13584); 
+    border-radius: 4px;
+  }
+  .twitter:hover{
+    transform: translateY(-3px); /* Mueve el enlace hacia arriba cuando se pasa el cursor sobre él */
+  }
